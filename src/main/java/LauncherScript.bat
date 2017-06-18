@@ -10,7 +10,7 @@ java Main
 
 @echo You can write your sentence again.
 set choice=
-set /p choice="Do you want to restart? Press 'Y' button and enter for accept: "
+set /p choice="Do you want to restart? If yes press 'Y' if not any other button and enter: "
 if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='Y' goto start
 
